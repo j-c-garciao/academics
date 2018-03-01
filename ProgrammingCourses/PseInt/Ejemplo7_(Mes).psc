@@ -9,7 +9,6 @@ Algoritmo Meses
 			Escribir "Marzo"
 		4:
 			Escribir "Abril"
-			
 		5:
 			Escribir "Mayo"
 		6:
