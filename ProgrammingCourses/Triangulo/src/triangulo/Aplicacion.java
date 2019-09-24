@@ -15,12 +15,12 @@ public class Aplicacion {
         
         //CREAR OBJETOS
         for(int i=0;i<100;++i){
-            triangulo[i]=new Triangulo(Math.random()*9+1,Math.random()*9+1,Math.random()*9+1);
+            triangulo[i]=new Triangulo((int)(Math.random()*9)+1,(int)(Math.random()*9)+1,(int)(Math.random()*9)+1);
         }
         
         for(int i=0;i<100;++i){
             for(int j=0;j<100;++j){
-                if(triangulo[i].getArea()>triangulo[j].getArea()){
+                if(triangulo[i].getPerimetro()>triangulo[j].getPerimetro()){
                     Triangulo aux = triangulo[i];
                     triangulo[i]=triangulo[j];
                     triangulo[j]=aux;
@@ -30,7 +30,7 @@ public class Aplicacion {
         
         //LEER OBJETOS
         for(int i=0;i<100;++i){
-            System.out.println(triangulo[i].getArea());//+"         "+triangulo[i].getLados());
+            System.out.println(triangulo[i].getPerimetro());//+"         "+triangulo[i].getLados());
         }
     }
 }
