@@ -41,8 +41,5 @@ public class Triangulo {
     
     public int calcularPerimetro(){
         return this.ladoA + this.ladoB + this.ladoC;
-    }
-    
-    
-   
+    }  
 }
