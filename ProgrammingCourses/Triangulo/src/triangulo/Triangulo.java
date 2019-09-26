@@ -22,9 +22,27 @@ public class Triangulo {
         this.ladoC=ladoC;
     }
     
+    public Triangulo(){
+        
+    }
+    
     //METODOS
-    public int getPerimetro(){
+    public void setLadoA(int ladoA) {
+        this.ladoA = ladoA;
+    }
+
+    public void setLadoB(int ladoB) {
+        this.ladoB = ladoB;
+    }
+
+    public void setLadoC(int ladoC) {
+        this.ladoC = ladoC;
+    }
+    
+    public int calcularPerimetro(){
         return this.ladoA + this.ladoB + this.ladoC;
     }
+    
+    
    
 }
