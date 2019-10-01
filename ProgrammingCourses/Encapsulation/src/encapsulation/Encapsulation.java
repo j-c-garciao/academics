@@ -8,7 +8,7 @@ package encapsulation;
 import encapsulation.paquete1.Clase1;
 import encapsulation.paquete2.Clase2;
 import encapsulation.paquete2.Clase2Hijo;
-
+ 
 /**
  *
  * @author jc_go
