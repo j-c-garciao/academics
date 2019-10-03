@@ -24,7 +24,6 @@ public class Aplicacion  {
         u.cod=20;
         d.setPrestamo();
         d.cod=30;
-        Color c= Color.RED;
     }
     
 }
