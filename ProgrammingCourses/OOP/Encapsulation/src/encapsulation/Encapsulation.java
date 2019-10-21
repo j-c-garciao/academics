@@ -26,7 +26,7 @@ public class Encapsulation {
         
         Clase1 cls1 = new Clase1();
         
-        System.out.println(cls1.atributo1);
+        /*System.out.println(cls1.atributo1);
         System.out.println(cls1.atributo2);
         System.out.println(cls1.atributo3);
         System.out.println(cls1.atributo4);
@@ -36,7 +36,7 @@ public class Encapsulation {
         System.out.println(cls2hijo.atributo2);
         System.out.println(cls2hijo.atributo3);
         System.out.println(cls2hijo.atributo4);
-        
+        */
     }
     
 }
