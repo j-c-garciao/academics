@@ -20,6 +20,5 @@ public class App {
         Gato gato = new Gato();
         gato.sonidoAnimal();
         gato.dormir();
-    }
-    
+    }     
 }
