@@ -6,7 +6,9 @@
 package app;
 
 import cliente.Cliente;
+import empleado.Empleado;
 import empresa.Empresa;
+import empresa.Rol;
 
 /**
  *
@@ -19,15 +21,19 @@ public class App {
      */
     public static void main(String[] args) {
        Empresa e1=new Empresa("X1"); 
+       //CONTRATACION
+       for(Rol r: e1.getRoles()){
+           if(r.getRol().compareTo("Presidente")==0)
+               r.setEmpleado(new Empleado("Jennifer"));
+           
+           if(r.getRol().compareTo("Secretrario")==0)
+               r.setEmpleado(new Empleado("Pedro"));
+           
+           if(r.getRol().compareTo("Ayudante")==0)
+               r.setEmpleado(new Empleado("Luis"));    
+       } 
        
-       
-       
-       
-       
-       
-       
-       
-       
+       //CLIENTES
        Cliente c1 = new Cliente("C1");
        Cliente c2 = new Cliente("C2");
        e1.addClientes(c1);
