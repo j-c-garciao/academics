@@ -18,8 +18,8 @@ public class Concurrencia extends Thread {
     public void run() {
     try{ 
         while(true){
-            System.out.println (numero);
-             sleep((long)(1000*Math.random()));
+            System.out.println(numero);
+            sleep((long)(1000*Math.random()));
         }
     } 
     catch (InterruptedException e){ 

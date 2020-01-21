@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AreaTriangulo2">
+  <ClassDiagramComponents>
+    <Class name="AreaTriangulo2" package="areatriangulo2" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="interseccion" returnType="Punto" visibility="private" isStatic="true">
+          <Argument type="Linea" name="l1"/>
+          <Argument type="Linea" name="l2"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="cambiar" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Punto" name="p"/>
+          <Argument type="int" name="index1"/>
+          <Argument type="int" name="index2"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Linea" package="areatriangulo2" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="pendiente" type="double" visibility="package"/>
+        <Field name="interseccion" type="double" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="pendiente"/>
+          <Argument type="double" name="interseccion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getPendiente" returnType="double" visibility="public"/>
+        <Method name="getInterseccion" returnType="double" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Punto" package="areatriangulo2" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="x" type="double" visibility="package"/>
+        <Field name="y" type="double" visibility="package"/>
+        <Field name="l1" type="Linea" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="x"/>
+          <Argument type="double" name="y"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getX" returnType="double" visibility="public"/>
+        <Method name="getY" returnType="double" visibility="public"/>
+        <Method name="setLinea" returnType="void" visibility="public">
+          <Argument type="Linea" name="l1"/>
+        </Method>
+        <Method name="getLinea" returnType="Linea" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="areatriangulo2.Punto" target="areatriangulo2.Linea" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="areatriangulo2.AreaTriangulo2" target="areatriangulo2.Punto" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="l1" source="areatriangulo2.Punto" target="areatriangulo2.Linea" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
