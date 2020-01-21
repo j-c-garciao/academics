@@ -17,6 +17,7 @@ import java.awt.event.KeyEvent;
 /**
  *
  * @author jc_go
+ * http://code-stream.blogspot.com/2012/03/arkanoid-like-java-based-game.html
  */
 public class Board extends javax.swing.JFrame implements ActionListener {
 

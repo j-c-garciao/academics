@@ -11,6 +11,10 @@ import pingpong.player.Player;
 /**
  *
  * @author jc_go
+ * Adapted from
+ * https://www.javaworld.com/article/2077137/synchronizing-threads-in-java--part-1.html
+ * 
+ * 
  */
 public class Game {
     public static void main(String args[]) {

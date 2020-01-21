@@ -9,6 +9,7 @@ import pingpong.PingPong;
 /**
  *
  * @author jc_go
+ * https://www.javaworld.com/article/2077137/synchronizing-threads-in-java--part-1.html
  */
 public class Player implements Runnable {
     PingPong myTable;   // Table where they play

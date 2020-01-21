@@ -8,6 +8,7 @@ package interfaces;
 /**
  *
  * @author jc_go
+ * http://code-stream.blogspot.com/2012/03/arkanoid-like-java-based-game.html
  */
 public interface Movable{
     public void move();
