@@ -16,10 +16,10 @@ import java.awt.Graphics2D;
  * http://code-stream.blogspot.com/2012/03/arkanoid-like-java-based-game.html
  */
 public class GamePad implements Paintable{
-    int top;
-    int left;
-    int bottom;
-    int right;
+    public int top;
+    public int left;
+    public int bottom;
+    public int right;
     Color clr;
     Container parent;    
      

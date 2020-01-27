@@ -34,14 +34,14 @@ public class PingPong {
     if (x.compareTo(whoseTurn) == 0){
         System.out.println("PING! ("+x+")");
         whoseTurn = opponent;
-        notifyAll();
+        //notifyAll();
     } 
     else{
         try{
             long t1 = System.currentTimeMillis();
             wait(2500);
             if ((System.currentTimeMillis() - t1) > 2500) {
-                System.out.println("****** TIMEOUT! "+x+" is waiting for "+whoseTurn+" to play.");
+                //System.out.println("****** TIMEOUT! "+x+" is waiting for "+whoseTurn+" to play.");
               }
           } catch (InterruptedException e) { }
       }

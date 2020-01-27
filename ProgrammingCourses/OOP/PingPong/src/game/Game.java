@@ -20,13 +20,16 @@ public class Game {
     public static void main(String args[]) {
        PingPong table = new PingPong();
        Thread alice = new Thread(new Player("bob", table));
-       Thread bob   = new Thread(new Player("alice", table));
+       Thread bob   = new Thread(new Player("peter", table));
+       Thread peter   = new Thread(new Player("alice", table));
        alice.setName("alice");
        bob.setName("bob");
+       peter.setName("peter");
        alice.start();    // alice empieza jugando
-       bob.start();      // bob empieza jugando
+       bob.start();      // bob 
+       peter.start();    //peter 
        
-       try {
+      /* try {
            // Esperar 5 segundos
            Thread.currentThread().sleep(5000);
        } catch (InterruptedException e) { }
@@ -34,6 +37,6 @@ public class Game {
        table.hit("DONE"); //Finalizar Juego.
        try {
            Thread.currentThread().sleep(1000);
-       } catch (InterruptedException e) { }
+       } catch (InterruptedException e) { }*/
     }
 }
