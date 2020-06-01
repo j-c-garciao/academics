@@ -17,6 +17,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
+import javax.swing.ButtonGroup;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JRadioButtonMenuItem;
 
 /**
  *
@@ -35,9 +40,9 @@ public class Board extends javax.swing.JFrame implements ActionListener {
     GameThread gameThread;
     GameThread gameThread2;
      
-    final static int SLOW = 9;
-    static final int NORMAL = 6;
-    static final int FAST = 3;
+    final static int SLOW = 100;
+    static final int NORMAL = 60;
+    static final int FAST = 30;
         
     int speed;
     
@@ -48,6 +53,40 @@ public class Board extends javax.swing.JFrame implements ActionListener {
         panel.setBackground(Color.WHITE);
                                 //ALT  IZQ  ALT+PRO ANC  
         GamePad pad = new GamePad(580, 100, 600,    200, Color.ORANGE, this);  
+        
+        
+        //MENU
+        JMenuBar menuBar = new JMenuBar();        
+        JMenu gameMenu = new JMenu("Game");
+        menuBar.add(gameMenu);        
+        JMenuItem playItem = new JMenuItem("Play");
+        gameMenu.add(playItem);
+        
+        playItem.setActionCommand("PLAY");
+        playItem.addActionListener(this);
+        
+        gameMenu.addSeparator();
+        
+        //BOTONES
+        
+         ButtonGroup btnGroup = new ButtonGroup();
+         JRadioButtonMenuItem rbMenuItem = new JRadioButtonMenuItem("Speed: SLOW");
+         rbMenuItem.setActionCommand("SLOW");
+         rbMenuItem.addActionListener(this);
+         btnGroup.add(rbMenuItem);
+         gameMenu.add(rbMenuItem);   
+        
+         rbMenuItem = new JRadioButtonMenuItem("Speed: NORMAL");
+         rbMenuItem.setActionCommand("NORMAL");
+         rbMenuItem.addActionListener(this);
+         btnGroup.add(rbMenuItem);
+         gameMenu.add(rbMenuItem);   
+        
+         rbMenuItem = new JRadioButtonMenuItem("Speed: FAST");
+         rbMenuItem.setActionCommand("NORMAL");
+         rbMenuItem.addActionListener(this);
+         btnGroup.add(rbMenuItem);
+         gameMenu.add(rbMenuItem);   
         
         // GAME      
         panel.remove(ball1);
@@ -63,8 +102,7 @@ public class Board extends javax.swing.JFrame implements ActionListener {
         
         panel.add(pad);
         this.add(panel, BorderLayout.CENTER);
-
-        
+        this.add(menuBar, BorderLayout.NORTH);
         
         this.addKeyListener(new KeyAdapter() {
              @Override
@@ -100,9 +138,40 @@ public class Board extends javax.swing.JFrame implements ActionListener {
     this.setSize(700, 650);
     this.setResizable(false); 
 
-    initGame(gameThread);
-    initGame(gameThread2);
     }
+    
+    
+  @Override
+   public void actionPerformed(ActionEvent e){
+       
+         if(this.gameThread != null){
+             
+             System.out.println("Action "+e.getActionCommand());
+             
+             
+             if(e.getActionCommand().equals("PLAY")){
+                initGame(gameThread);
+                initGame(gameThread2);
+        
+             }
+             else if(e.getActionCommand().equals("SLOW"))
+             {
+                 this.speed = SLOW;
+                 this.gameThread.setSpeed(SLOW);
+            }
+            else if(e.getActionCommand().equals("NORMAL"))
+             {
+                 this.speed = NORMAL;
+                 this.gameThread.setSpeed(NORMAL);
+             }
+             else if(e.getActionCommand().equals("FAST"))
+             {
+                 this.speed = FAST;
+                 this.gameThread.setSpeed(FAST);
+             }
+         }
+     }
+   
     
     
     private void initGame(GameThread gt){
@@ -172,8 +241,4 @@ public class Board extends javax.swing.JFrame implements ActionListener {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

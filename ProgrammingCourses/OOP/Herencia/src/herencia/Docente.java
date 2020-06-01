@@ -6,9 +6,13 @@ public class Docente extends Usuario{
         super (id,nombre);
     }
     
+    
+    public Docente(int id, String nombre, int secret){
+        super (id,nombre,secret);
+    }
+    
     @Override
     public void setPrestamo(){
         System.out.println("Hola 2");
    }
-    
 }

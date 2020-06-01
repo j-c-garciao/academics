@@ -30,20 +30,18 @@ public class GameThread extends Thread{
     public void run(){
         try{
             while(true){
-                System.out.println("Forever");
+                //
+                System.out.println("ANTES DEL MOV");
                 shape.parent.repaint();
-                System.out.println("Forever2");
                 shape.move();
+                
+                System.out.println(this.getName());
                 try{
                     Thread.sleep(speed);
                 }
                 catch(InterruptedException e){
                     System.out.println(e);
                 }
-                
-                System.out.println("Forever3");
-                
-                
             }
         }
         catch(IllegalStateException excp){            
