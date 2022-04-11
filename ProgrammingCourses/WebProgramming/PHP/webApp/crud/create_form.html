@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create New-Record</title>
+        
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+        });
+        
+        function validarFormulario(evento) {
+            evento.preventDefault();
+            var fname = document.getElementById('fname').value;
+            if(fname.length == 0) {
+                alert('Nothing has been written in the first-name field');
+            return;
+            }
+            
+            var lname = document.getElementById('lname').value;
+            if(lname.length == 0) {
+                alert('Nothing has been written in the last-name field');
+            return;
+            }
+            
+            fname = document.getElementById('fname').value;
+            if (fname.length < 3) {
+                alert('The lenght of the first-name is not valid');
+            return;
+            }
+        
+            lname = document.getElementById('lname').value;
+            if (lname.length < 3) {
+                alert('The lenght of the last-name is not valid');
+            return;
+            }
+            this.submit();
+        }
+      
+        </script>    
+        
+    </head>
+    <body>
+        <form id="formulario" action="../controllers/controller.php" method="get">
+          <fieldset>
+            <legend>Personal information:</legend>
+            First name:<br>
+            <input type="text" name="fname" id="fname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lname" id="lname" value="Mouse">
+            <br>
+            Date:<br>
+            <input type="date" name="date" id="date">
+            <br><br>
+            <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+        <br>
+        <center><a href="../index.php">Home</a>
+        </center>
+    </body>
+</html>
