@@ -1,3 +1,12 @@
+/******************************************
+ * Juan Carlos García Ojeda               *
+ *                                        * 
+ * Programa de Ingeniería de Sistemas     *
+ * Facultad de Ingeniería                 *
+ * ==============================         *
+ * Universidad de Cartagena - 2022        *
+ ******************************************/
+
 package app;
 
 import stack.Node;
