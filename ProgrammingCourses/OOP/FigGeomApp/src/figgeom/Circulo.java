@@ -13,7 +13,6 @@ public class Circulo extends Figura {
         super(color);
         this.diametro = diametro;
     }
-    
     public double calcularPerimetro(){
         return (2 * Math.PI * (this.diametro/2));
     }

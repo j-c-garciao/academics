@@ -27,7 +27,7 @@ public class Pentagono extends Figura {
         this.ladoE = ladoE;
     }
 
-    public int calcularPerimetro(){
+    public double calcularPerimetro(){
         return this.ladoA + this.ladoB + this.ladoC + this.ladoD + this.ladoE;
     }
     

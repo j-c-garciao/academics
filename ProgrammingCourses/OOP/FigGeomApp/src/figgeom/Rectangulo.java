@@ -22,7 +22,7 @@ public class Rectangulo extends Figura {
     }
     
     @Override
-    public int calcularPerimetro(){
+    public double calcularPerimetro(){
         return 2 * this.ladoA + 2 * this.ladoB;
     }
     

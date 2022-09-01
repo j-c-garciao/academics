@@ -21,7 +21,7 @@ public class Triangulo extends Figura {
     }
     
     @Override
-    public int calcularPerimetro(){
+    public double calcularPerimetro(){
         return this.ladoA + this.ladoB + this.ladoC;
     }
     
@@ -37,8 +37,8 @@ public class Triangulo extends Figura {
      */
     @Override 
     public double calcularArea(){
-    double s=(this.ladoA + this.ladoB + this.ladoC)/2.0;
-    return Math.sqrt(s*(s-this.ladoA)*(s-this.ladoB)*(s-this.ladoC));
+        double s=(this.ladoA + this.ladoB + this.ladoC)/2.0;
+        return Math.sqrt(s*(s-this.ladoA)*(s-this.ladoB)*(s-this.ladoC));
     }
     
     
