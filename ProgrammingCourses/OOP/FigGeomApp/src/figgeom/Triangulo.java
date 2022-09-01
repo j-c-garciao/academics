@@ -20,6 +20,7 @@ public class Triangulo extends Figura {
         this.ladoC = ladoC;
     }
     
+    @Override
     public int calcularPerimetro(){
         return this.ladoA + this.ladoB + this.ladoC;
     }
@@ -34,9 +35,11 @@ public class Triangulo extends Figura {
      * lado C del triángulo.
      * @return el área del tringulo empleando la fórmula de Herón
      */
-    
+    @Override 
     public double calcularArea(){
     double s=(this.ladoA + this.ladoB + this.ladoC)/2.0;
     return Math.sqrt(s*(s-this.ladoA)*(s-this.ladoB)*(s-this.ladoC));
     }
+    
+    
 }

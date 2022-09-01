@@ -22,5 +22,13 @@ public class Figura {
         return this.color;
     }
     
+    public int calcularPerimetro() {
+        return 1;
+    }
+    
+    public double calcularArea() {
+        return 1.0;
+    }
+    
     
 }

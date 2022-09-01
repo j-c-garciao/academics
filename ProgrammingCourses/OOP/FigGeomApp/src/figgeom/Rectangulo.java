@@ -21,11 +21,13 @@ public class Rectangulo extends Figura {
         this.ladoB = ladoB;
     }
     
+    @Override
     public int calcularPerimetro(){
         return 2 * this.ladoA + 2 * this.ladoB;
     }
     
-    public int calcularArea(){
+    @Override
+     public double calcularArea(){
         return this.ladoA * this.ladoB;
     }
 }
