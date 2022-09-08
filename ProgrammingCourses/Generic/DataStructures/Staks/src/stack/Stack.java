@@ -48,13 +48,13 @@ public class Stack <T>{
 			tamaño = tamaño - 1;
 		}
 		else
-			System.out.println("La Lista esta vacia");
+			System.out.println("La Pila esta vacia");
 	}
 
 	public void peek(){
 		if(!estaVacia())
 			System.out.println(primerNodo.getDato());
 		else
-			System.out.println("La Lista esta vacia");
+			System.out.println("La Pila esta vacia");
 	}
 }
