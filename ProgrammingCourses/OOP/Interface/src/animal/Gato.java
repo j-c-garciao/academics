@@ -18,7 +18,7 @@ public class Gato implements Animal {
 
     @Override
     public void dormir() {
-        System.out.println("Zzz");
+        //System.out.println("Zzz");
     }
     
 }
