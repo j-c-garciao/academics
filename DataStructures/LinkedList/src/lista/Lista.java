@@ -1,4 +1,4 @@
-package lista;
+package co.edu.unicartagena.lista;
 
 public class Lista <T>{
 	Nodo<T> primerNodo;

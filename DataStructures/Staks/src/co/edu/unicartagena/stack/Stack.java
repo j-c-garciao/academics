@@ -7,7 +7,7 @@
  * Universidad de Cartagena - 2022        *
  ******************************************/
 
-package stack;
+package co.edu.unicartagena.stack;
 
 public class Stack <T>{
 	Node<T> primerNodo;
