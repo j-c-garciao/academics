@@ -7,7 +7,7 @@
  * Universidad de Cartagena - 2022        *
  ******************************************/
 
-package binarytree;
+package co.edu.unicartagena.binarytree;
 
 public class Node{
 	public long datos;
