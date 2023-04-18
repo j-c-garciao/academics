@@ -9,8 +9,10 @@
 
 package app;
 
-import stack.Node;
-import stack.Stack;
+import co.edu.unicartagena.stack.Node;
+import co.edu.unicartagena.stack.Stack;
+
+
 
 public class App {
 	public static void main(String args[]){
