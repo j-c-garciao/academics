@@ -4,18 +4,14 @@
  * and open the template in the editor.
  */
 package app;
-
 import cliente.Cliente;
 import empleado.Empleado;
-import empresa.Empresa;
-import empresa.Rol;
-
+import empresa.*;
 /**
  *
  * @author jc_go
  */
 public class App {
-
     /**
      * @param args the command line arguments
      */

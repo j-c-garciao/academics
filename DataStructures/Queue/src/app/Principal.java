@@ -1,6 +1,7 @@
 package app;
 
-import co.edu.unicartagena.colas.*;
+import co.edu.unicartagena.queue.Cola;
+import co.edu.unicartagena.queue.Nodo;
 
 public class Principal {
 	public static void main(String args[]){

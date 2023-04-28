@@ -1,4 +1,4 @@
-package co.edu.unicartagena.lista;
+package co.edu.unicartagena.list;
 
 public class Lista <T>{
 	Nodo<T> primerNodo;
@@ -84,8 +84,8 @@ public class Lista <T>{
 			boolean band=false;
 			//CASO 1 : Lista tiene un elemento
 			if(tamaño==1){
-				//if(Integer.parseInt(temp.getDato().toString()) < Integer.parseInt(nuevoNodo.getDato().toString())){
-				if(temp.getDato() < Nodo.getDato()){
+				if(Integer.parseInt(temp.getDato().toString()) < Integer.parseInt(nuevoNodo.getDato().toString())){
+				//if(temp.getDato() < Nodo.getDato()){
                                 primerNodo.sig=nuevoNodo;
 				}
 				else{

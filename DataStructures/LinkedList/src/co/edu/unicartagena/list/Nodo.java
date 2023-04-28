@@ -1,4 +1,4 @@
-package lista;
+package co.edu.unicartagena.list;
 
 public class Nodo<T> {
 	T dato;

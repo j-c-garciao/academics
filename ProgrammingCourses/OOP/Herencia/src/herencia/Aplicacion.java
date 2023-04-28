@@ -12,7 +12,6 @@ import java.awt.Color;
  * @author jc_go
  */
 public class Aplicacion  {
-
     /**
      * @param args the command line arguments
      */

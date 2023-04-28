@@ -1,7 +1,8 @@
 package app;
 
-import lista.Lista;
-import lista.Nodo;
+import co.edu.unicartagena.list.Lista;
+import co.edu.unicartagena.list.Nodo;
+
 
 public class App {
     public static void main(String args[]){

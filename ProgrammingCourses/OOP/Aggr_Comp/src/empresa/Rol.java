@@ -14,6 +14,7 @@ import empleado.Empleado;
 public class Rol {
     private String rol;
     private Empleado empleado;
+    double
     
     public Rol(String rol) {
         this.rol = rol;

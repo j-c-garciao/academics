@@ -6,7 +6,7 @@ public class Usuario {
     protected int cod;
     private int secret;
     
-    public Usuario (int id, String nombre){
+    /*public Usuario (int id, String nombre){
         this.id=id;
         this.nombre=nombre;
     }
@@ -16,7 +16,7 @@ public class Usuario {
         this.nombre=nombre;
         this.secret=secret;
     }
-    
+    */
     void setPrestamo(){
         System.out.println("HOLA");
     }

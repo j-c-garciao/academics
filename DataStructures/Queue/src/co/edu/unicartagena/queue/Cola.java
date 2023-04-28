@@ -1,4 +1,4 @@
-package co.edu.unicartagena.colas;
+package co.edu.unicartagena.queue;
 
 public class Cola <T>{
 	Nodo<T> primerNodo;

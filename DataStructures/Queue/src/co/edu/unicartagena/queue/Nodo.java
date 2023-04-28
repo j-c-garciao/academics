@@ -1,5 +1,4 @@
 package co.edu.unicartagena.queue;
-
 public class Nodo<T> {
 	T dato;
 	Nodo<T> sig;
