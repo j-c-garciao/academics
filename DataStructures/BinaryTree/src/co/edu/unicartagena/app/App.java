@@ -13,7 +13,20 @@ import co.edu.unicartagena.binarytree.*;
 public class App {
 	public static void main (String args[]){
 		BinaryTree a=new BinaryTree();
-		a.adicionar(10, a.getRaiz(),1);
+                a.adicionar(10, a.getRaiz(),1);
+                a.adicionar(20, a.getRaiz(),1);
+                a.adicionar(5, a.getRaiz(),1);
+                a.adicionar(4, a.getRaiz(),1);
+                a.adicionar(6, a.getRaiz(),1);
+                a.adicionar(30, a.getRaiz(),1);
+                a.adicionar(31, a.getRaiz(),1);
+                a.adicionar(23, a.getRaiz(),1);
+                a.adicionar(18, a.getRaiz(),1);
+                a.adicionar(21, a.getRaiz(),1);
+                
+                
+                
+		/*a.adicionar(10, a.getRaiz(),1);
 		a.adicionar(15,a.getRaiz(),1);
 		a.adicionar(20,a.getRaiz(),1);
 		a.adicionar(40,a.getRaiz(),1);
@@ -69,7 +82,7 @@ public class App {
 		a.adicionar(11,a.getRaiz(),1);
 		a.adicionar(30,a.getRaiz(),1);
 		a.adicionar(89,a.getRaiz(),1);
-		a.adicionar(90,a.getRaiz(),1);
+		a.adicionar(90,a.getRaiz(),1);*/
 				
 		System.out.println("Preorder");
 		a.preorder(a.getRaiz());
@@ -77,6 +90,15 @@ public class App {
 		a.inorder(a.getRaiz());
 		System.out.println("\nPostorder");
 		a.postorder(a.getRaiz());
+                
+                 System.out.println("\n\nNúmero de Nodos            := "+a.nodos);
+	    System.out.println("Profundidad                  := "+a.getAltura());
+	    System.out.println("Número Mayor                 := "+a.numeroMayor);
+	    System.out.println("Nivel Numero Mayor           := "+a.getNivelNumeroMayor());
+	    System.out.println("Número Menor                 := "+a.numeroMenor);
+	    System.out.println("Nivel Numero Menor           := "+a.getNivelNumeroMenor());  
+                
+                
 	}
 	
 	

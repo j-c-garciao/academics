@@ -17,7 +17,7 @@ public class TestA {
 	    for (int i = 1; i <= 10; i++ ) {
 	         long valor = (int)( Math.random()*10);
 	         System.out.print(valor+" ");
-                 arbol.getRaiz
+                 //arbol.getRaiz
                  
 	         arbol.adicionar(valor, arbol.getRaiz(),1);
 	    }
@@ -29,11 +29,11 @@ public class TestA {
 	    System.out.println("\nRecorrido Post-order :=");
 	    arbol.postorder(arbol.getRaiz());
 	    
-	    System.out.println("\n\nN�mero de Nodos            := "+arbol.nodos);
+	    System.out.println("\n\nNúmero de Nodos            := "+arbol.nodos);
 	    System.out.println("Profundidad                  := "+arbol.getAltura());
-	    System.out.println("N�mero Mayor                 := "+arbol.numeroMayor);
+	    System.out.println("Número Mayor                 := "+arbol.numeroMayor);
 	    System.out.println("Nivel Numero Mayor           := "+arbol.getNivelNumeroMayor());
-	    System.out.println("N�mero Menor                 := "+arbol.numeroMenor);
+	    System.out.println("Número Menor                 := "+arbol.numeroMenor);
 	    System.out.println("Nivel Numero Menor           := "+arbol.getNivelNumeroMenor());  
 	}
 }
