@@ -13,7 +13,5 @@ public class Clase2Hijo extends Clase2 {
 
    public Clase2Hijo(){
        super();
- 
    }
-    
 }
