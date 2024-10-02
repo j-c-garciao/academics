@@ -1,4 +1,4 @@
-package herencia;
+package usuarios;
 
 public class Usuario {
     int id;
@@ -6,23 +6,31 @@ public class Usuario {
     protected int cod;
     private int secret;
     
+    public Usuario (int id){
+        this.id=id;
+    }
+    
     /*public Usuario (int id, String nombre){
         this.id=id;
         this.nombre=nombre;
     }
-    
+    /*
     public Usuario (int id, String nombre, int secret){
         this.id=id;
         this.nombre=nombre;
         this.secret=secret;
     }
     */
-    void setPrestamo(){
+    public void setPrestamo(){
         System.out.println("HOLA");
     }
     
-    int getSecret(){
+    public int getSecret(){
         return this.secret;
     }
+    
+    
+    
+    
     
 }
